@@ -4,5 +4,12 @@ module.exports = {
 		path: __dirname + '/dist',
 		publicPath: '/static/',
 		filename: 'build.js'
+	}, 
+	module: {
+		rules: [
+			{
+				test: /\.vue$/,
+				use: ["vue-loader"]
+			}]
 	}
 }
