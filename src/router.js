@@ -1,5 +1,5 @@
 module.exports = {
-	route: [
+	routes: [
 		{
 			path: '/about',
 			component: require('./views/about.vue')
