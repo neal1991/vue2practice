@@ -20,3 +20,17 @@
 		</div>
 	</div>
 </template>
+<script type="text/javascript">
+	export default {
+		data() {
+			return {
+				message: 'hello'
+			}
+		},
+		methods: {
+			clickBtn() {
+				alert(this.message)
+			}
+		}
+	}
+</script>
