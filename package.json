@@ -23,7 +23,9 @@
     "element-ui": "^1.0.0",
     "css-loader": "^0.23.1",
     "file-loader": "^0.8.5",
-    "style-loader": "^0.13.1"
+    "style-loader": "^0.13.1",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^6.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

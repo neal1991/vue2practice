@@ -78,7 +78,12 @@ module.exports = {
     loaders: [
       {
         test: /\.vue$/,
-        loader: 'vue-loader'
+        loader: 'vue-loader',
+        options: {
+        	loaders: {
+        		'scss': 'style-loader!css-loader!sass-loader',
+        	}
+        }
       },
       {
         test: /\.js$/,
@@ -87,7 +92,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: 'style-loader!css-loader'
+        loader: 'style-loader!css-loader!sass-loader'
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2)(\?\S*)?$/,
@@ -96,9 +101,9 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif|svg)(\?\S*)?$/,
         loader: 'file-loader',
-        query: {
-          name: '[name].[ext]?[hash]'
-        }
+        // query: {
+        //   name: '[name].[ext]?[hash]'
+        // }
       }
     ]
     },
